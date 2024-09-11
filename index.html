@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="view-transition" content="same-origin">
+        <title>TheCodingKid - Youtuber and Future Software Engineer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="navbar.css">
+    </head>
+    <body>
+        <div class="navBar">
+            <div class="logo"><a href="#home">TheCodingKid</a></div>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="intro.html">Intro</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://www.youtube.com/@ACodingKid">Channel</a></li>
+                    <li><img src="moon.png" id="icon"></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="home" class="main">
+            <div class="namePlate">
+                <span class="hello">Hello!</span>
+                <span class="myNameIs">my name is</span>
+                <span class="name">TheCodingKid</span>
+                <span class="moreInfo">
+                    I like to program small prototypes 
+                    of games and make web pages.
+                </span>
+            </div>
+        </div>
+
+        <h1>My Projects</h1>
+
+        <div id="projects" class="main">
+
+            <div class="project">
+                <img class="projectImg" src="project1.png">
+                <p class="projectDesc">
+                    My first project made in python was a simple
+                    space shooter game I made using pygame. To make
+                    this game I used a tutorial from the Tech With Tim
+                    youtube channel. <a class="link" href="https://www.youtube.com/@TechWithTim">Tech With Tim.</a>
+                </p>
+            </div>
+            
+            <div class="project">
+                <img class="projectImg" src="project2.png">
+                <p class="projectDesc">
+                    This game is a simple platformer made using pygame
+                    with a tutorial from Coding With Russ. This game had 
+                    an error where only the first level would load.
+                    <a class="link" href="https://www.youtube.com/@CodingWithRuss">Coding With Russ.</a>
+                </p>
+            </div>
+
+            <div class="project">
+                <img class="projectImg" src="project3.png">
+                <p class="projectDesc">
+                    This is a quiz game I made using some css
+                    and Html tricks I learned from my past projects.
+                    There are ten questions and you can play the game
+                    <a href="https://thecodingkidyt.github.io/Quiz-Game/">here.</a>
+                </p>
+            </div>
+
+            <div class="project">
+                <img class="projectImg" src="project4.png">
+                <p class="projectDesc">
+                    This is a simple calculator application that I made when I was just
+                    starting out with HTML and this project also taught me a bit of CSS.
+                    You can use it <a href="https://thecodingkidyt.github.io/Calculator/">here.</a>
+                </p>
+            </div>
+
+        </div>
+
+        <a href="#"><button class="arrow">^</button></a>
+
+        <script>
+
+            var icon = document.getElementById("icon")
+
+            icon.onclick = function(){
+                document.body.classList.toggle("darkMode");
+                if(document.body.classList.contains("darkMode")){
+                    icon.src = "sun.png";
+                }
+                else{
+                    icon.src = "moon.png";
+                }
+            }
+
+        </script>
+
+    </body>
+</html>

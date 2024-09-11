@@ -1,0 +1,79 @@
+#intro{
+    margin-bottom: 0px;
+}
+
+.aboutMe{
+    margin-bottom: 100px;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeP{
+    width: 700px;
+    text-align: left;
+    font-size: 30px;
+}
+
+.skills{
+    margin-left: 170px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 10rem;
+    animation: appear 3s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.skillcontainer{
+    background-color: aqua;
+    border: var(--secondary-colour) 5px solid;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    width: 460px;
+}
+
+.skill{
+    font-size: 20px;
+    color: black;
+}
+
+.percentage{
+    display: flex;
+}
+
+.skillbarghost{
+    height: 10px;
+    border: solid;
+    border-radius: 5px;
+    width: 400px;
+    background-color: gray;
+}
+
+.skillbar{
+    height: 10px;
+    border: gray 5px;
+    border-radius: 5px;
+}
+
+.voilet{
+    background-color: violet;
+    width: 200px;
+}
+
+.blue{
+    background-color: blue;
+    width: 400px;
+}
+
+.red{
+    background-color: red;
+    width: 380px;
+}
+
+.yellow{
+    background-color: yellow;
+    width: 80px;
+}

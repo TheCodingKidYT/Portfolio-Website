@@ -1,0 +1,33 @@
+#projects{
+    margin-left: 4vw;
+    margin-bottom: 6vw;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project{
+    width: 500px;
+    border-radius: 50px;
+
+    animation: appear 3s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.projectImg{
+    margin-left: 30px;
+    width: 400px;
+    height: 400px;
+    border: var(--secondary-colour) 0.5rem solid;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+.projectDesc{
+    margin-left: 30px;
+}
+
+.projectDesc a{
+    color: rgb(109, 0, 124);
+}

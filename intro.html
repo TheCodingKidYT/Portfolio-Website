@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="view-transition" content="same-origin">
+        <title>TheCodingKid - Youtuber and Future Software Engineer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="intro.css">
+        <link rel="stylesheet" href="navbar.css">
+    </head>
+    <body>
+        <div class="navBar">
+            <div class="logo"><a href="index.html">TheCodingKid</a></div>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html#">Home</a></li>
+                    <li><a href="#">Intro</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="https://www.youtube.com/@ACodingKid">Channel</a></li>
+                    <li><img src="moon.png" id="icon"></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="intro" class="main">
+            <div class="aboutMe">
+                <h1 class="aboutMeTitle">About Me</h1>
+                <p class="aboutMeP">
+                    Hello, my name is TheCodingKid and I am currently living in
+                    India. I want to become a software engineer for a big
+                    company like Google. I started learning to code when one day
+                    I discovered a project setting on a website called Tinker.
+                    This project allowed you to code your own game from scratch
+                    using blocks. Then I discovered a website called
+                    Microsoft Makecode that was similiar to Tinker. A few months
+                    later I found out about Scratch, a very popular tool to learn
+                    coding. From there I learned python and a library called pygame 
+                    which I used to make games. And then I learned HTML and CSS after
+                    I was curious to how people made websites.Later I even started a 
+                    youtube channel to teach people how to code. And so, here I am.
+                </p>
+
+            </div>
+            
+            <h1>Skills</h1>
+                <div class="skills">
+                    <div class="skillcontainer">
+                        <span class="skill">Javascript.</span>
+                        <div class="percentage"> 
+                            <div class="skillbarghost"><div class="skillbar yellow"></div></div>
+                            <span>20%</span>
+                        </div>
+                    </div>
+                    <div class="skillcontainer">
+                        <span class="skill">Python.</span>
+                        <div class="percentage"> 
+                            <div class="skillbarghost"><div class="skillbar blue"></div></div>
+                            <span>100%</span>
+                        </div>
+                    </div>
+                    <div class="skillcontainer">
+                        <span class="skill">CSS.</span>
+                        <div class="percentage"> 
+                            <div class="skillbarghost"><div class="skillbar voilet"></div></div>
+                            <span>50%</span>
+                        </div>
+                    </div>
+                    <div class="skillcontainer">
+                        <span class="skill">HTML 5</span>
+                        <div class="percentage"> 
+                            <div class="skillbarghost"><div class="skillbar red"></div></div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+
+        <a href="#"><button class="arrow">^</button></a>
+
+        <script>
+
+            var icon = document.getElementById("icon")
+
+            icon.onclick = function(){
+                document.body.classList.toggle("darkMode");
+                if(document.body.classList.contains("darkMode")){
+                    icon.src = "sun.png";
+                }
+                else{
+                    icon.src = "moon.png";
+                }
+            }
+
+        </script>
+
+    </body>
+</html>
